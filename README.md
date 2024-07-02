@@ -23,16 +23,18 @@ R-api-3-zona: "api 1" le envia los datos de zona del lector
                nombre del topico de respuesta (ZONAxx, xx es la zona)
                y envia a ese topico el resultado del SELECT.
 
+Instalacion de librerias MQTT - MariaDB (mySQL) en LINUX:
 ---------------------------------------------------------
-Instalación de librerias MQTT - MariaDB (mySQL) en LINUX:
 
 MQTT ( Mosquitto )
                   sudo apt-get install libssl-dev
                   sudo apt-get install libpaho-mqtt-dev
-
 MySQL ( MariaDB)
-                  sudo apt install libmariadb3 libmariadb-dev
--------------------------------------------------------------
+                  sudo apt install libmariadb3 libmariadb-dev            
+
+
+Compilacion en en LINUX por CLI:
+---------------------------------------------------------
 
 Compilación en LINUX por CLI:
 
@@ -40,13 +42,13 @@ Compilación en LINUX por CLI:
         gcc <programa.c> -o <ejecutable> -lpaho-mqtt3c
 
    Para el caso particular de este trabajo practico se
-   compilan R-api-1-server.c  y  R-api-3-zona.c
+   compilan api-1-server.c  y  api-3-zona.c
 
 *) MariaDB:
            gcc -o <ejecutable> <programa.c> $(mariadb_config --include --libs)
 
    Para el caso particular de este trabajo practico se
-   compila R-api-2-sql.c
+   compila api-2-sql.c
 
 
 
