@@ -27,11 +27,11 @@ Instalacion de librerias MQTT - MariaDB (mySQL) en LINUX:
 ---------------------------------------------------------
 
 MQTT ( Mosquitto )
-     sudo apt-get install libssl-dev
-     sudo apt-get install libpaho-mqtt-dev
-MySQL ( MariaDB)
-     sudo apt install libmariadb3 libmariadb-dev            
+sudo apt-get install libssl-dev
+sudo apt-get install libpaho-mqtt-dev
 
+MySQL ( MariaDB)
+sudo apt install libmariadb3 libmariadb-dev            
 
 Compilacion en en LINUX por CLI:
 ---------------------------------------------------------
