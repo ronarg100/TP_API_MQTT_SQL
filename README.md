@@ -6,7 +6,7 @@ API en C - Interface SQL (MariaDB) - MQTT (Mosquitto)
 -----------------------------------------------------
 Esta API esta constituida en tres modulos:
 
-R-api-1-server : Se encarga de "escuchar" al topico "AL_SERVER"
+R-api-1-server : Se encarga de "escuchar" al topico "AL_SERVER".
                  Tambien llama al modulo de mySQL (api-2-sql),
                  y luego al modulo MQTT (R-api-3-zona) que PUBLICA
                  el resultado obtenido de mySQL en el topico correspondiente
