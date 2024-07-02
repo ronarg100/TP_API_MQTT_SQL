@@ -36,8 +36,6 @@ MySQL ( MariaDB)
 Compilacion en en LINUX por CLI:
 ---------------------------------------------------------
 
-Compilación en LINUX por CLI:
-
 *) Módulos MQTT:
         gcc <programa.c> -o <ejecutable> -lpaho-mqtt3c
 
