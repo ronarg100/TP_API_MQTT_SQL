@@ -38,13 +38,13 @@ Compilacion en en LINUX por CLI:
 
 Compilación en LINUX por CLI:
 
-*) MQTT:
+*) Módulos MQTT:
         gcc <programa.c> -o <ejecutable> -lpaho-mqtt3c
 
    Para el caso particular de este trabajo practico se
    compilan api-1-server.c  y  api-3-zona.c
 
-*) MariaDB:
+*) Módulo MariaDB:
            gcc -o <ejecutable> <programa.c> $(mariadb_config --include --libs)
 
    Para el caso particular de este trabajo practico se
