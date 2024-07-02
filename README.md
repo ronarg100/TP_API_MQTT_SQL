@@ -2,15 +2,15 @@ TRABAJO PRACTICO PROGRAMACION Y COMUNICACION S.E.
 =================================================
 
 
-API en C - Interface SQL (MariaDB) - MQTT (Mosquitto)
+API en C - Interface MQTT (Mosquitto) - SQL (MariaDB)
 -----------------------------------------------------
 Esta API esta constituida en tres modulos:
 
 R-api-1-server : Se encarga de "escuchar" al topico "AL_SERVER".
-                 Tambien llama al modulo de mySQL (api-2-sql),
-                 y luego al modulo MQTT (R-api-3-zona) que PUBLICA
-                 el resultado obtenido de mySQL en el topico correspondiente
-                 a la zona del lector
+  Tambien llama al modulo de mySQL (api-2-sql),
+  y luego al modulo MQTT (R-api-3-zona) que PUBLICA
+  el resultado obtenido de mySQL en el topico correspondiente
+  a la zona del lector
 Este modulo arranca con el server COMO SERVICIO, y se queda ejecutando
 permanentemente en el equipo servidor MQTT y mySQL.
 
@@ -42,13 +42,13 @@ Compilación en LINUX por CLI:
         gcc <programa.c> -o <ejecutable> -lpaho-mqtt3c
 
    Para el caso particular de este trabajo practico se
-   compilan api-1-server.c  y  api-3-zona.c
+   compilan R-api-1-server.c  y  R-api-3-zona.c
 
 *) Módulo MariaDB:
            gcc -o <ejecutable> <programa.c> $(mariadb_config --include --libs)
 
    Para el caso particular de este trabajo practico se
-   compila api-2-sql.c
+   compila R-api-2-sql.c
 
 
 
